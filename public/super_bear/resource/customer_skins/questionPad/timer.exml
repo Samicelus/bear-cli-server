@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.timerSkin" states="normal, alert, stop" width="120" height="120" xmlns:e="http://ns.egret.com/eui">
+    <e:Image id="circle_outter" height="120" width="120" source.normal="resource/customer_ui/question/timer_outter.png" source.alert="resource/customer_ui/question/timer_alert_outter.png" anchorOffsetY="60" anchorOffsetX="60" x="60" y="60"/>
+    <e:Image id="circle_inner" height="120" width="120" source.normal="resource/customer_ui/question/timer_inner.png" source.alert="resource/customer_ui/question/timer_alert_inner.png" anchorOffsetY="60" anchorOffsetX="60" x="60" y="60"/>
+    <e:Label id="timer_second" fontFamily="微软雅黑" text="10" x="0" y="0" size="60" width="120" height="120" textAlign="center" verticalAlign="middle" textColor="0x00FFFF" textColor.stop="0x888888" textColor.alert="0xFF0000" anchorOffsetY="0" anchorOffsetX="0"/>
+</e:Skin>

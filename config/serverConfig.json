@@ -1,0 +1,12 @@
+{
+  "production":{
+    "port": 8833,
+    "cipher_secret": "socalledbear",
+    "salt": "TU$&DH*J)%@S245dfim"
+  },
+  "dev":{
+    "port": 8833,
+    "cipher_secret": "socalledbear",
+    "salt": "TU$&DH*J)%@S245dfim"
+  }
+}

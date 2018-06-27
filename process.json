@@ -1,0 +1,24 @@
+{
+  "apps": [
+    {
+      "name": "superBear-http",
+      "script": "./app.js",
+      "watch": false,
+      "error_file": "/data/logs/nodes/superBear-http-error.log",
+      "out_file": "/data/logs/nodes/superBear-http-out.log",
+      "env": {
+        "NODE_ENV": "dev"
+      }
+    },
+    {
+      "name": "superBear-socket.io",
+      "script": "./socket.js",
+      "watch": false,
+      "error_file": "/data/logs/nodes/superBear-socket.io-error.log",
+      "out_file": "/data/logs/nodes/superBear-socket.io-out.log",
+      "env": {
+        "NODE_ENV": "dev"
+      }
+    }
+  ]
+}

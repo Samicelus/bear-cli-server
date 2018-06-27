@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin xmlns:e="http://ns.egret.com/eui" class="skins.TipSkin">
+    <e:Rect height="100%" width="100%" anchorOffsetX="0" anchorOffsetY="0"/>  
+  <e:Image height="100%" width="100%" source="resource/customer_ui/tip/info_bg.png" scale9Grid="100,20,10,10"/>  
+  <e:List id="tipInfo" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+        <e:layout>
+            <e:TileLayout>
+                <e:columnAlign JUSTIFY_USING_GAP="justifyUsingGap"/>
+            </e:TileLayout>
+        </e:layout>
+    </e:List>
+</e:Skin>

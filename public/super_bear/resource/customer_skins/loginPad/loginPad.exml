@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin xmlns:e="http://ns.egret.com/eui" class="skins.CustomerPanelSkin" minHeight="230" minWidth="450">  
+  <e:Image left="0" right="0" bottom="0" top="0" source="resource/customer_ui/panel/border.png" scale9Grid="2,2,12,12"/>  
+  <e:Group id="inputArea" width="425" height="205" top="11" left="13" anchorOffsetX="0" anchorOffsetY="0"> 
+    <e:TextInput id="login_input" prompt="输入登录名" horizontalCenter="1.5" verticalCenter="-76.5" skinName="skins.CustomerTextInputSkin"/>  
+    <e:TextInput id="pwd_input" prompt="输入密码" displayAsPassword="true" horizontalCenter="1.5" verticalCenter="-29.5" skinName="skins.CustomerTextInputSkin"/>
+    <e:TextInput id="code_input" prompt="输入验证码" horizontalCenter="-74.5" verticalCenter="17.5" skinName="skins.CustomerTextInputSkin" anchorOffsetX="0" width="148"/>  
+		<e:Button id="loginButton" label="登录" skinName="skins.CustomerButtonSkin" width="150" height="46" x="64" y="149"/>
+    <e:Button id="registButton" label="注册并登录" skinName="skins.CustomerButtonSkin" width="150" height="46" x="215" y="149"/>
+    <e:Button id="sendCheckButton" label="发送验证" skinName="skins.CustomerButtonSkin" width="150" height="46" x="215" y="97"/>
+  </e:Group>   
+</e:Skin>

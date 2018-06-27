@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.finalPadSkin" minHeight="520" minWidth="450" xmlns:e="http://ns.egret.com/eui">
+    <e:Image source="resource/customer_ui/final/bg.png" scale9Grid="20,20,410,580" left="0" right="0" top="0" bottom="0"/>
+    <e:List id="playerInfo" width="300" height="400" x="75" y="33" anchorOffsetX="0" anchorOffsetY="0">
+        <e:layout>
+            <e:TileLayout>
+                <e:columnAlign JUSTIFY_USING_GAP="justifyUsingGap"/>
+            </e:TileLayout>
+        </e:layout>
+    </e:List>
+    <e:Button id="backButton" label="返回" skinName="skins.BackButtonSkin" width="150" height="46" x="150" y="435"/> 
+</e:Skin>

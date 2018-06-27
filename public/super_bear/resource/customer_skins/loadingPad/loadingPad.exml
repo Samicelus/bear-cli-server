@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin xmlns:e="http://ns.egret.com/eui" class="skins.loadingPanelSkin" minHeight="1136" minWidth="640">  
+  <e:Image width="100%" height="100%" left="0" right="0" bottom="0" top="0" source="resource/customer_ui/loading/bg.png"/>
+  <e:ProgressBar id="pb" skinName="skins.CustomerProgressBarSkin" x="120" y="960" width="400" height="60"/>
+</e:Skin>

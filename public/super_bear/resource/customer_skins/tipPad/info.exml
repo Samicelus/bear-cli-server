@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.infoSkin" xmlns:e="http://ns.egret.com/eui">
+    <e:Label fontFamily="Source Han Sans" left="10" right="10" text="{data.info}" size="20" height="100" textAlign="center" verticalAlign="middle" textColor="0x00FFFF" anchorOffsetY="0" anchorOffsetX="0"/>
+</e:Skin>

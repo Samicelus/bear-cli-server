@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="skins.QuestionButtonSkin" states="up,down,right,wrong,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" width="420" height="64">
+    <e:Group id="choiceButton">
+        <e:Image width="420" height="64" scale9Grid="240,36,20,4" alpha.disabled="0.5"
+                source.up="resource/customer_ui/question/questionButton_up.png"
+                source.down="resource/customer_ui/question/questionButton_down.png"
+                source.right="resource/customer_ui/question/questionButton_right.png"
+                source.wrong="resource/customer_ui/question/questionButton_wrong.png"
+                source.disabled="resource/customer_ui/question/questionButton_disable.png"/>
+        <e:Label id="labelDisplay" top="8" bottom="8" left="8" right="12"
+                size="20" text="{data.key}"
+                verticalAlign="middle" textAlign="center" anchorOffsetX="0" textColor.up="0x00FFFF" textColor.down="0x00FFFF" textColor.right="0x00FF00" textColor.wrong="0xFF0000" textColor.disabled="0x888888"/>
+    </e:Group>
+</e:Skin>

@@ -1,0 +1,20 @@
+{
+	"Types": {
+		"HOSPITAL": "hospital",
+	    "DEPARTMENT": "department",
+	    "DOCTOR": "doctor",
+	    "COMMENT_DOCTOR": "comment_doctor"
+	},
+	"OnlineTypes": {
+	    "TEXT": "text",
+	    "PHONE": "phone",
+	    "VIDEO": "video"
+	},
+	"Select": {
+		"HOSPITAL": "cover_img name loc open_time has_number doctor_num bed_num star_level tag description",
+	    "DEPARTMENT": "hospital_oid name avatar description collection_num share_num parent_oid level sort",
+	    "DOCTOR": "nickname avatar profession description sections online_desc service_text service_phone service_video",
+	    "COMMENT_DOCTOR": "doctor_oid star comment gift_oid",
+	    "NEWS": "cover_img content title hospital_oid"
+	}
+}

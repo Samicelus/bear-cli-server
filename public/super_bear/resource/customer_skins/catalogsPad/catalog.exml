@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.catalogSkin" states="normal, selected" width="90" height="90" xmlns:e="http://ns.egret.com/eui">
+    <e:Image height="100%" width="100%" x="0" y="0" source.selected="resource/customer_ui/catalog/catalogBg.png"/>
+    <e:Rect id="mask" height="56" width="56" x="17" y="5" ellipseWidth="56" ellipseHeight="56"/>
+    <e:Image id="icon" height="56" width="56" x="17" y="5" source="{data.icon}" anchorOffsetY="0" anchorOffsetX="0"/>
+    <e:Label fontFamily="微软雅黑" text="{data.catalog_name}" x="0" y="65" size="18" width="90" textAlign="center" verticalAlign="middle" textColor="0x00FFFF" anchorOffsetY="0" height="24" anchorOffsetX="0"/>
+</e:Skin>

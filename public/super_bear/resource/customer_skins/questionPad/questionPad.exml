@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.questionPadSkin" minHeight="800" minWidth="600" xmlns:e="http://ns.egret.com/eui">
+    <e:Image id="questionBackground" source="resource/customer_ui/question/bg.png" scale9Grid="100,100,10,10" width="600" height="210" x="0" y="2" anchorOffsetX="0" anchorOffsetY="0"/>
+    <e:List id="playerInfo" width="175" height="64" x="40" y="34" anchorOffsetX="0" anchorOffsetY="0">
+        <e:layout>
+            <e:TileLayout>
+                <e:columnAlign JUSTIFY_USING_GAP="justifyUsingGap"/>
+            </e:TileLayout>
+        </e:layout>
+    </e:List>
+    <e:List id="timer" width="120" height="120" anchorOffsetX="0" anchorOffsetY="0" x="240" y="51">
+        <e:layout>
+            <e:TileLayout columnAlign="JUSTIFY_USING_GAP"/>
+        </e:layout>
+    </e:List>
+    <e:List id="question" width="520" height="580" anchorOffsetX="0" anchorOffsetY="0" x="40" y="180">
+        <e:layout>
+            <e:TileLayout columnAlign="JUSTIFY_USING_GAP"/>
+        </e:layout>
+    </e:List>
+</e:Skin>
