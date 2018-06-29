@@ -5,6 +5,23 @@ class auth{
     constructor(redis){
         this.redis = redis;
         this._cipher_secret = cipher_secret;
+        //对作用域进行绑定，也可以使用箭头函数来修复js对作用域的错误处理
+        //已知作用域失效的调用是作为 koa-router 中间件的时候
+        this.authToken = this.authToken.bind(this);
+    }
+
+    async authToken(ctx, next){
+        let token = ctx.request.header['b-token'];
+        let user_id = ctx.request.header['b-user-id'];
+        let ret = await this.checkToken(user_id, token);
+        if (!ret.result) {
+            throw new Error(`token 校验失败，请重新登录`);
+        }else{
+            ctx.request.body.userInfo = {
+                user_id: user_id
+            };
+        }
+        return next();
     }
 
     generate16salt(user_id){
