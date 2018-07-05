@@ -1,24 +1,24 @@
 {
   "production":{
     "user":[
-      {"id": "user-server-1", "host": "testapi.runningdoctor.cn", "port": 3030}
+      {"id": "user-server-1", "host": "www.xxx.com", "port": 3030}
     ],
     "chat":[
-      {"id": "chat-server-1", "host": "testapi.runningdoctor.cn", "port": 3031}
+      {"id": "chat-server-1", "host": "www.xxx.com", "port": 3031}
     ],
     "world":[
-      {"id": "world-server-1", "host": "testapi.runningdoctor.cn", "port": 3035}
+      {"id": "world-server-1", "host": "www.xxx.com", "port": 3035}
     ]
   },
   "dev":{
     "user":[
-      {"id": "user-server-1", "host": "testapi.runningdoctor.cn", "port": 3030}
+      {"id": "user-server-1", "host": "www.xxx.com", "port": 3030}
     ],
     "chat":[
-      {"id": "chat-server-1", "host": "testapi.runningdoctor.cn", "port": 3031}
+      {"id": "chat-server-1", "host": "www.xxx.com", "port": 3031}
     ],
     "world":[
-      {"id": "world-server-1", "host": "testapi.runningdoctor.cn", "port": 3035}
+      {"id": "world-server-1", "host": "www.xxx.com", "port": 3035}
     ]
   }
 }
