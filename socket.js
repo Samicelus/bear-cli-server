@@ -3,6 +3,7 @@ const util = require('util');
 const cluster = require('cluster');
 const appServerConfig = require(path.join(process.cwd(),'/config/appServerConfig.json'))[process.env.NODE_ENV];
 const redisPromise = require('./libs/redis-promise.js').redisClient;
+const masterAuth = require('./libs/auth.js')(redisPromise);
 const SocketHandler = require(path.join(process.cwd(),'/libs/socket.io_handler.js'));
 
 global.workers = {};
@@ -53,11 +54,18 @@ if(cluster.isMaster){
         socket.emit("reconnection_login",{});
         socket.on('message',async (data)=>{
             log(`receive message from ${socket.id}:`,data);
-            let rst = await global.socket_handler.handle_message(data, socket);
-            if(rst){
+            let decrypt_data = masterAuth.decryptMessage(data.data, data.user_id);
+            let rst = await global.socket_handler.handle_message(decrypt_data, socket);
+
+            if(rst.result){
                 log(`request from ${socket.id} done ${new Date().getTime()}`)
             }else{
-                throw new Error('error process socket.io message');
+                rst.handler_name = "error";
+                let encrypt_data = masterAuth.encryptMessage(JSON.stringify(rst), `system:${process.env.server_id||'http'}`);
+                socket.send({
+                    user_id: `system:${process.env.server_id||'http'}`,
+                    data: encrypt_data
+                });
             }
         })
     });

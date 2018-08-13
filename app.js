@@ -7,6 +7,8 @@ const koaBody = require('koa-body');
 const main = serve(path.join(__dirname,'/public'));
 const utils = require('./libs/utils.js');
 const serverConfig = require(path.join(process.cwd(),'/config/serverConfig.json'))[process.env.NODE_ENV];
+const redisPromise = require('./libs/redis-promise.js').redisClient;
+global.auth = require('./libs/auth.js')(redisPromise);
 
 Array.prototype.shuffle = function(){
     let input = this;
